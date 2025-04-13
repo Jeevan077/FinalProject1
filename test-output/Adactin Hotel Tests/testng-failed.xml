@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adactin Hotel Tests]">
+  <parameter name="url" value="https://adactinhotelapp.com/index.php"/>
+  <test thread-count="5" name="Hotel Booking Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="testSearchHotel"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+    </classes>
+  </test> <!-- Hotel Booking Tests(failed) -->
+  <test thread-count="5" name="Hotel Book Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.SelectHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="testSelectHotel"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.SelectHotelTest -->
+    </classes>
+  </test> <!-- Hotel Book Tests(failed) -->
+</suite> <!-- Failed suite [Adactin Hotel Tests] -->

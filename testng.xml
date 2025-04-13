@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Adactin Hotel Tests">
+<parameter name="url" value="https://adactinhotelapp.com/index.php"></parameter>
+    <test name="Login Tests">
+    <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Hotel Booking Tests">
+    <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.SearchHotelTest"/>
+        </classes>
+    </test>
+    
+     <test name="Hotel Book Tests">
+    <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.SelectHotelTest"/>
+        </classes>
+    </test>
+    
+    <test name="Booking Hotel Tests">
+    <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.BookHotelTest"/>
+        </classes>
+    </test>
+    
+    <test name="Booked Itineary Tests">
+    <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.BookedItinearyTest"/>
+        </classes>
+    </test>
+</suite>
+    
+
+
+   
